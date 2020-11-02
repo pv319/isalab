@@ -5,15 +5,13 @@ module or_gate(
 );
 
     always_comb begin
-        if (a==1 && b==1) begin
+        if (a==1 || b==1) begin
             r = 1;
         end
-        if (a==1) begin
-            r = 1;
+        else begin
+        r = 0;
         end
-        if (b==1) begin
-            r = 1;
-        end
+        
     end
 
 endmodule
